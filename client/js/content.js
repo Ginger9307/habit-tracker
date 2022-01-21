@@ -401,7 +401,7 @@ function showUserHabit(habit) {
     btnAddFact.setAttribute('data-id', habit.id);
     footerHabit.appendChild(btnAddFact);
     // click event - create habit fact for habit plan
-    // btnAddFact.addEventListener('click', createHabitFact);
+    btnAddFact.addEventListener('click', createHabitFact);
 
     const newHabitFact = document.createElement('label');
     newHabitFact.classList.add('habit-fact');
